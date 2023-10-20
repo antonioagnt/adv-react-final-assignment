@@ -7,8 +7,8 @@
 3. [x] Learn Chakra UI.[^2]
 4. [x] Learn Formik and Yup.[^3]
 5. [x] Make them work together![^4]
-6. [ ] Create a Feature Branch and work from there.
-7. [ ] Follow Step 1 instructions.
+6. [x] Create a Feature Branch and work from there.
+7. [x] Follow Step 1 instructions.
 8. [ ] Follow Step 2 instructions.
 9. [ ] Follow Step 3 instructions.
 10. [ ] Follow Step 4 instructions.
