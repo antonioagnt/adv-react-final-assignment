@@ -9,7 +9,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from '@chakra-ui/react';
 
-// keys was missing, so i added.
 const socials = [
   {
     icon: faEnvelope,
@@ -39,6 +38,29 @@ const socials = [
 ];
 
 const Header = () => {
+  const prevScrollY = useRef(0);
+  const boxRef = useRef(null);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > prevScrollY.current) {
+      boxRef.current.style.transform = 'translateY(-200px)';
+    } else {
+      boxRef.current.style.transform = 'translateY(0)';
+    }
+
+    prevScrollY.current = currentScrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -61,6 +83,7 @@ const Header = () => {
       transitionDuration='.3s'
       transitionTimingFunction='ease-in-out'
       backgroundColor='#18181b'
+      ref={boxRef}
     >
       <Box color='white' maxWidth='1280px' margin='0 auto'>
         <HStack
@@ -98,4 +121,5 @@ const Header = () => {
     </Box>
   );
 };
+
 export default Header;
