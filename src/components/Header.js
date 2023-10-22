@@ -13,27 +13,22 @@ const socials = [
   {
     icon: faEnvelope,
     url: 'mailto: hello@example.com',
-    id: 0,
   },
   {
     icon: faGithub,
     url: 'https://github.com',
-    id: 1,
   },
   {
     icon: faLinkedin,
     url: 'https://www.linkedin.com',
-    id: 2,
   },
   {
     icon: faMedium,
     url: 'https://medium.com',
-    id: 3,
   },
   {
     icon: faStackOverflow,
     url: 'https://stackoverflow.com',
-    id: 4,
   },
 ];
 
@@ -96,7 +91,7 @@ const Header = () => {
             <HStack spacing={4}>
               {socials.map((social) => (
                 <a
-                  key={social.id}
+                  key={social.url}
                   href={social.url}
                   target='_blank'
                   rel='noopener noreferrer'
