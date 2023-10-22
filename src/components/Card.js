@@ -28,35 +28,3 @@ const Card = ({ title, description, imageSrc }) => {
 };
 
 export default Card;
-
-// const Card = ({ title, description, imageSrc }) => {
-//   return (
-//     <VStack
-//       spacing={4}
-//       borderWidth="1px"
-//       borderColor="gray.200"
-//       p={4}
-//       borderRadius="md"
-//       alignItems="start"
-//       boxShadow="md"
-//       bg="white"
-//       maxW="320px"
-//     >
-//       <Image src={imageSrc} alt={title} borderRadius="md" />
-
-//       <VStack align="start" spacing={1}>
-//         <Heading as="h2" size="lg">
-//           {title}
-//         </Heading>
-//         <Text>{description}</Text>
-//       </VStack>
-
-//       <HStack justifyContent="space-between" w="100%">
-//         <Text>Learn more</Text>
-//         <FontAwesomeIcon icon={faArrowRight} size="1x" />
-//       </HStack>
-//     </VStack>
-//   );
-// };
-
-// export default Card;

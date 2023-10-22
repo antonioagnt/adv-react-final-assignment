@@ -11,7 +11,7 @@
 7. [x] Follow Step 1 instructions.
 8. [x] Follow Step 2 instructions.
 9. [x] Follow Step 3 instructions.
-10. [ ] Follow Step 4 instructions.
+10. [x] Follow Step 4 instructions.
 11. [ ] Complete Step 5 (Bonus).
 12. [ ] Check if course requirements were fulfilled.
 13. [ ] Test if everything is okay and runs in the course online labs.
