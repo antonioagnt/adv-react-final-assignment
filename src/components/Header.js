@@ -89,10 +89,10 @@ const Header = () => {
       ref={boxRef}
     >
       {/* display a hamburguer menu on mobile */}
-      <FontAwesomeIcon icon={faBars} size='2x' onClick={toggleMobileMenu} />
-      {isMobileMenuOpen && (
+      {/* <FontAwesomeIcon icon={faBars} size='2x' onClick={toggleMobileMenu} /> */}
+      {/* {isMobileMenuOpen && (
         <MobileMenu socials={socials} handleClick={handleClick} />
-      )}
+      )} */}
       <Box color='white' maxWidth='1280px' margin='0 auto'>
         <HStack
           px={16}
