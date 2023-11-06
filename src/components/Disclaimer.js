@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Modal,
   ModalOverlay,
@@ -9,10 +9,17 @@ import {
   ModalCloseButton,
 } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/react';
+import MoreInfoCard from './MoreInfoCard';
+import DisclaimerCard from './DisclaimerCard';
 
 export default function Disclaimer() {
-  const isOpen = true;
-  const onClose = () => {};
+  const [isOpen, setIsOpen] = useState(true);
+  const [moreInfo, seteMoreInfo] = useState(false);
+  const onClose = () => setIsOpen(false);
+  const handleMoreInfo = () => {
+    seteMoreInfo(!moreInfo);
+  };
+
   return (
     <>
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -21,22 +28,16 @@ export default function Disclaimer() {
           <ModalHeader>Aviso</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <p>Esta pessoa não existe !</p>
-            <p>
-              Esta é um projeto educacional feito para a conclusão do curso
-              Advanced React da Meta
-            </p>
-            <p>
-              Se tiver interesse em saber mais sobre o que foi feito nesse
-              projeto so clicar em mais informacões
-            </p>
+            {moreInfo ? <MoreInfoCard /> : <DisclaimerCard />}
           </ModalBody>
 
           <ModalFooter>
             <Button colorScheme='blue' mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button variant='ghost'>Saber mais</Button>
+            <Button variant='ghost' onClick={handleMoreInfo}>
+              Saber mais
+            </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
