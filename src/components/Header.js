@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -8,6 +9,7 @@ import {
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from '@chakra-ui/react';
+import MobileMenu from './MobileMenu';
 
 const socials = [
   {
@@ -33,6 +35,12 @@ const socials = [
 ];
 
 const Header = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(true); // Add state for the mobile menu
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen); // Function to toggle the mobile menu
+  };
+
   const prevScrollY = useRef(0);
   const boxRef = useRef(null);
 
@@ -80,6 +88,11 @@ const Header = () => {
       backgroundColor='#18181b'
       ref={boxRef}
     >
+      {/* display a hamburguer menu on mobile */}
+      {/* <FontAwesomeIcon icon={faBars} size='2x' onClick={toggleMobileMenu} /> */}
+      {/* {isMobileMenuOpen && (
+        <MobileMenu socials={socials} handleClick={handleClick} />
+      )} */}
       <Box color='white' maxWidth='1280px' margin='0 auto'>
         <HStack
           px={16}
