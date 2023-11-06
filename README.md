@@ -13,9 +13,9 @@
 9. [x] Follow Step 3 instructions.
 10. [x] Follow Step 4 instructions.
 11. [x] Complete Step 5 (Bonus).
-12. [ ] Check if course requirements were fulfilled.
-13. [ ] Test if everything is okay and runs in the course online labs.
-14. [ ] Optional: Host a version online.
+12. [x] Check if course requirements were fulfilled.
+13. [x] Test if everything is okay and runs in the course online labs.
+14. [x] Optional: Host a version online.
 
 [^1]: Read [git branching name convention](https://dev.to/couchcamote/git-branching-name-convention-cch)
 [^2]: Finished [Net Ninja Chakra UI Crash Course](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hcnIeryurNMMcGBHp7AYlP), project saved in the repo Chakra-UI-Crash-Course. and read [Chakra documentation](https://chakra-ui.com/getting-started)
