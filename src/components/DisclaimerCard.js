@@ -4,10 +4,10 @@ import React from 'react';
 export default function DisclaimerCard() {
   return (
     <Box>
-      <Heading size='md'>Pete é um personagem ficiticio</Heading>
+      <Heading size='md'>Pete is a fictional character</Heading>
       <Text>
-        Este é um projeto educacional desenvolvido no curso Advanced React. Para
-        ver o codigo e outras informações informações click em Saber mais.
+        This is an educational project from the Meta Advanced React Course. To
+        learn more, click on 'More Info.'
       </Text>
     </Box>
   );

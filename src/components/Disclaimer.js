@@ -25,7 +25,7 @@ export default function Disclaimer() {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Aviso</ModalHeader>
+          <ModalHeader>Disclaimer</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             {moreInfo ? <MoreInfoCard /> : <DisclaimerCard />}
@@ -36,7 +36,7 @@ export default function Disclaimer() {
               Close
             </Button>
             <Button variant='ghost' onClick={handleMoreInfo}>
-              Saber mais
+              More Info
             </Button>
           </ModalFooter>
         </ModalContent>
