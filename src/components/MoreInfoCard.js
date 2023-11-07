@@ -24,7 +24,7 @@ export default function MoreInfoCard() {
       </Text>
       <Center>
         <a
-          href='https://github.com/antonioagnt/adv-react-final-assigment'
+          href='https://github.com/antonioagnt/adv-react-final-assignment'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -50,7 +50,7 @@ export default function MoreInfoCard() {
           rel='noopener noreferrer'
         >
           To see what I've done and what was already provided, check the
-          repository on GitHub.
+          Repository on GitHub.
         </a>
       </Text>
     </Box>

@@ -44,7 +44,7 @@ export default function Disclaimer() {
               <Heading size='lg'>Disclaimer</Heading>
               <VStack>
                 <a
-                  href='https://github.com/antonioagnt/adv-react-final-assigment'
+                  href='https://github.com/antonioagnt/adv-react-final-assignment'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
