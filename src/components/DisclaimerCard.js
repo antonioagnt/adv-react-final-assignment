@@ -1,13 +1,18 @@
-import { Box, Text, Heading } from '@chakra-ui/react';
+import { Box, Text, Heading, HStack } from '@chakra-ui/react';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function DisclaimerCard() {
   return (
     <Box>
-      <Heading size='md'>Pete é um personagem ficiticio</Heading>
+      <HStack>
+        <Heading size='md'>Pete is a fictional character</Heading>
+      </HStack>
+
       <Text>
-        Este é um projeto educacional desenvolvido no curso Advanced React. Para
-        ver o codigo e outras informações informações click em Saber mais.
+        This is an educational project from the Meta Advanced React Course. To
+        learn more, click on 'More Info.'
       </Text>
     </Box>
   );
