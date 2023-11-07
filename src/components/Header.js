@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import {
   faGithub,
   faLinkedin,
@@ -9,7 +9,6 @@ import {
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from '@chakra-ui/react';
-import MobileMenu from './MobileMenu';
 
 const socials = [
   {
@@ -35,11 +34,11 @@ const socials = [
 ];
 
 const Header = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(true); // Add state for the mobile menu
+  // const [isMobileMenuOpen, setMobileMenuOpen] = useState(true); // Add state for the mobile menu
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen); // Function to toggle the mobile menu
-  };
+  // const toggleMobileMenu = () => {
+  //   setMobileMenuOpen(!isMobileMenuOpen); // Function to toggle the mobile menu
+  // };
 
   const prevScrollY = useRef(0);
   const boxRef = useRef(null);

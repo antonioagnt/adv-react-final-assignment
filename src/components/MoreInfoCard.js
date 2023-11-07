@@ -1,21 +1,58 @@
 import React from 'react';
-import { Box, Image, Text } from '@chakra-ui/react';
+import { Box, Center, Image, Text, Divider } from '@chakra-ui/react';
 import metaBadge from '../images/meta-small.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function MoreInfoCard() {
   return (
     <Box>
       <Text>
-        Hi ! i'm Antonio Neto(linkedin Icon), and i made this simple reactApp as
-        part of the Advanced React course from the Meta Certificate Profisional
-        course.
+        Hi! I'm and I've created this simple React app as part of the Meta
+        Certificate Professional course.
+        <a
+          href='https://www.linkedin.com/in/antonioagnt/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Antonio Neto,
+        </a>
+        , and I've created this simple React app as part of the Meta Certificate
+        Professional course.
+        <Divider borderColor='black.600' variant='dashed' marginTop='2' />
       </Text>
+      <Center>
+        <a
+          href='https://github.com/antonioagnt/adv-react-final-assigment'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Image
+            padding='10px'
+            src={metaBadge}
+            sizes='small'
+            alt='meta-badge'
+            borderRadius='xl'
+          />
+        </a>
+      </Center>
       <Text>
-        To see in details what i done and what was already provived check the
-        repository on linkedin if you want to see all badges i have on creedly
-        click on the link bellown.
+        If you want to check this badge and my others on Creedly, click on the
+        link above.
       </Text>
-      <Image src={metaBadge} sizes='small' alt='meta-badge' borderRadius='xl' />
+      <Divider borderColor='black.600' variant='dashed' marginTop='2' />
+
+      <Text padding='2'>
+        <a
+          href='https://www.credly.com/users/antonio-albuquerque-guimaraes-neto'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          To see what I've done and what was already provided, check the
+          repository on GitHub.
+        </a>
+      </Text>
     </Box>
   );
 }
