@@ -11,7 +11,7 @@ export default function MoreInfoCard() {
       <Text>
         Hi! I'm{' '}
         <a
-          href='https://www.credly.com/badges/144a1798-d70f-492c-bbef-bb0d2a22092b/public_url'
+          href='https://www.linkedin.com/in/antonioagnt/'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -23,7 +23,7 @@ export default function MoreInfoCard() {
       </Text>
       <Center>
         <a
-          href='https://github.com/antonioagnt/adv-react-final-assignment'
+          href='https://www.credly.com/users/antonio-albuquerque-guimaraes-neto'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -44,7 +44,7 @@ export default function MoreInfoCard() {
 
       <Text padding='2'>
         <a
-          href='https://www.credly.com/users/antonio-albuquerque-guimaraes-neto'
+          href='https://github.com/antonioagnt/adv-react-final-assignment'
           target='_blank'
           rel='noopener noreferrer'
         >
