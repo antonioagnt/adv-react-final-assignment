@@ -9,16 +9,15 @@ export default function MoreInfoCard() {
   return (
     <Box>
       <Text>
-        Hi! I'm and I've created this simple React app as part of the Meta
-        Certificate Professional course.
+        Hi! I'm{' '}
         <a
           href='https://www.linkedin.com/in/antonioagnt/'
           target='_blank'
           rel='noopener noreferrer'
         >
           Antonio Neto,
-        </a>
-        , and I've created this simple React app as part of the Meta Certificate
+        </a>{' '}
+        and I've created this simple React app as part of the Meta Certificate
         Professional course.
         <Divider borderColor='black.600' variant='dashed' marginTop='2' />
       </Text>
